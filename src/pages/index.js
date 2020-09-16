@@ -19,7 +19,7 @@ export default function Home() {
         <title>Fotos de Corrida</title>
       </Head>
       <main>
-        <HeaderContainer image={backgroundImage[0].image}>
+        <HeaderContainer image={backgroundImage[1].image}>
           <Header />
           <Search />
         </HeaderContainer>
@@ -27,7 +27,12 @@ export default function Home() {
           <span>Eventos por categoria.</span>
           <CardContainer>
             {events.map((item, index) => (
-              <Card key={index} title={item.title} image={item.image} />
+              <Card
+                key={index}
+                title={item.title}
+                image={item.image}
+                link={item.link}
+              />
             ))}
           </CardContainer>
         </EventsContainer>

@@ -11,8 +11,10 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   position: absolute;
   z-index: 9999;
-  > svg + svg {
-    display: none;
+  > a {
+    > svg + svg {
+      display: none;
+    }
   }
 
   @media ${query({ to: 'xl' })} {
@@ -28,12 +30,14 @@ export const HeaderContainer = styled.div`
     height: 80px;
 
     position: relative;
-    > svg {
-      display: none;
-    }
-    > svg + svg {
-      display: flex;
-      width: 120px;
+    > a {
+      > svg {
+        display: none;
+      }
+      > svg + svg {
+        display: flex;
+        width: 120px;
+      }
     }
   }
 

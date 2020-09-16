@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { query } from 'atomic-layout'
 
-export const CardContent = styled.div`
+export const CardContent = styled.a`
   flex: 1;
   display: flex;
   justify-content: center;

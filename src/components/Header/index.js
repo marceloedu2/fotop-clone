@@ -15,11 +15,13 @@ const Header = () => {
   const [dropDown, setDropDown] = useState(false)
   return (
     <HeaderContainer>
-      <FotopLogoWhite />
-      <FotopLogo />
+      <a href="#">
+        <FotopLogoWhite />
+        <FotopLogo />
+      </a>
       <LinksContent dropdown={dropDown}>
         <MobileIcons>
-          <a href="#">
+          <a>
             <FiShoppingCart />
           </a>
           <button onClick={() => setDropDown(!dropDown)}>
@@ -31,13 +33,13 @@ const Header = () => {
             <a href="#">BAIXAR FOTOS</a>
           </li>
           <li>
-            <a href="#">SOU FOTÓGRAFO</a>
+            <a href="https://fotop.io/">SOU FOTÓGRAFO</a>
           </li>
           <li>
-            <a href="#">SERVIÇOS</a>
+            <a href="https://servicos.fotop.com.br/">SERVIÇOS</a>
           </li>
           <li>
-            <a href="#">LOGIN</a>
+            <a href="https://fotop.com.br/fotos/login">LOGIN</a>
           </li>
           <li>
             <span>
@@ -46,16 +48,22 @@ const Header = () => {
             </span>
             <UlLinkBalloon>
               <li>
-                <a href="#">BAIXAR FOTOS DE UM PEDIDO</a>
+                <a href="https://fotop.com.br/fotos/login?url=/fotos/meuspedidos/consulta/id/">
+                  BAIXAR FOTOS DE UM PEDIDO
+                </a>
               </li>
               <li>
-                <a href="#">COMO COMPRAR FOTOS</a>
+                <a href="https://ajuda.fotop.com.br/kb/pt-br/article/61416/como-comprar">
+                  COMO COMPRAR FOTOS
+                </a>
               </li>
               <li>
-                <a href="#">CENTRAL DE AJUDA</a>
+                <a href="https://ajuda.fotop.com.br/kb">CENTRAL DE AJUDA</a>
               </li>
               <li>
-                <a href="#">CONTATE-NOS</a>
+                <a href="https://ajuda.fotop.com.br/kb/pt-br/form/1812">
+                  CONTATE-NOS
+                </a>
               </li>
             </UlLinkBalloon>
           </li>

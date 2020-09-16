@@ -2,9 +2,9 @@ import React from 'react'
 import { CardContent } from '@/components/Card/styles'
 import { BiRightArrowAlt } from 'react-icons/bi'
 
-const Card = ({ title, image }) => {
+const Card = ({ title, image, link }) => {
   return (
-    <CardContent image={image}>
+    <CardContent href={link} image={image}>
       <div>
         <span>{title}</span>
         <BiRightArrowAlt />
