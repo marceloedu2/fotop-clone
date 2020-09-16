@@ -27,6 +27,7 @@ export const InputContainer = styled.div`
     transition: all 0.5s;
     &::placeholder {
       color: ${props => props.theme.colors.gray};
+      font-size: 16px;
     }
     &:focus {
       opacity: 0;
